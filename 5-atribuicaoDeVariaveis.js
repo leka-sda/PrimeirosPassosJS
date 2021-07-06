@@ -2,14 +2,17 @@
 console.log("Atribuição de Variáveis");
 
 const idade = 24;
-const nome = "Gisele";
+const primeiroNome = "Gisele";
 const sobrenome = "Sodré";
 
-console.log(nome + sobrenome); //Vai ficar tudo junto
-console.log(nome, sobrenome); //Uma opção de inclusão de espaço
-console.log(nome + " " + sobrenome); //Outra opção de inclusão de espaço
+console.log(primeiroNome + sobrenome); //Vai ficar tudo junto
+console.log(primeiroNome, sobrenome); //Uma opção de inclusão de espaço
+console.log(primeiroNome + " " + sobrenome); //Outra opção de inclusão de espaço
 
-console.log(`Meu nome é ${nome} ${sobrenome}`);  
+console.log(`Meu nome é ${primeiroNome} ${sobrenome}`);  
 
-nome = nome + sobrenome;
-console.log(nome); //Com a variável como uma constante, ela não se alterará depois em uma sobrescrição
+let contador = 0;
+contador = contador +1;
+
+const nomeCompleto = primeiroNome + sobrenome;
+console.log(nomeCompleto); //Com a variável como uma constante, ela não se alterará depois em uma sobrescrição
